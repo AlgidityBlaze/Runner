@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <audio>
+        <source src="sound/1.mp3">
+    </audio>
+
+
+
+    <div class="container">
+
+
+        <!-- жизни, счет, музыка -->
+        <div class="game" style="display: none;">
+
+            <!-- жизни -->
+            <div id="lifes">
+            </div>
+            <!-- сама игра -->
+            <div id="options">
+                <div id="score">
+                    Score: 0
+                </div>
+
+                <div id="sound">
+                    <img src="images/mute_sound.png">
+                </div>
+
+                <div id="gamer">
+                    <img  src="images/3F3F.gif">
+                </div>
+            </div>
+        </div>
+
+
+
+        <!-- окно приветствия -->
+        <div class="app" style="display: block;">
+            <div class="app__title">Готовий ?</div>
+            <div class="app__gamer">
+                <!-- марио -->
+                <!--<video width="200px" height="350px" preload="auto" autoplay="true" loop="true" muted="muted"
+                    poster="">
+                    <source src="images/WQ1I.gif.mp4" type="video/mp4">
+                    </source>
+                </video>-->
+                <!-- соник -->
+                <img src="images/3F3F.gif">
+            </div>
+            <button id="startBtn">Розпочнемо !</button>
+        </div>
+
+        <!-- правила игры -->
+        <!-- <div class="end" style="display: none;">
+            <div class="app__title">Правила игры</div>
+
+            <ol>
+                <li>Лови монетки - они увеличивают счет</li>
+                <li>Лови кольца - они увеличивают жизни</li>
+                <li>Избегай бомбочек - они забирают жизнь</li>
+            </ol>
+
+            <button>Start</button>
+        </div> -->
+
+        <!-- бонус - это кольца и монеты -->
+        <!--  -->
+        <!-- <div class="bonus" style="display: none;">
+            <div class="ring"></div>
+            <div class="coin"><img src="images/coin.gif"></div>
+        </div> -->
+
+
+        <div class="center" style="display: none;">
+			<div class="bonus ring"></div>
+			<div class="bonus coin"></div>
+        </div>
+
+
+
+
+
+
+        <!-- окно завершения игры -->
+        <div class="end" style="display: none;">
+            <div class="app__title">Поразка</div>
+
+            <!-- счет -->
+            <div class="score">
+                Вы набрали: <span id="myScore">0</span>
+            </div>
+
+            <button id="resetBtn">Заново</button>
+        </div>
+
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
